@@ -1,0 +1,44 @@
+C:\Users\Oleksandr_Mykhailiuk\Documents\Tasks\WebApi\2015-Project-SDesk-master\SDesk\Model\bin\Debug\Epam.Sdesk.Model.dll.config
+C:\Users\Oleksandr_Mykhailiuk\Documents\Tasks\WebApi\2015-Project-SDesk-master\SDesk\Model\bin\Debug\Epam.Sdesk.Model.dll
+C:\Users\Oleksandr_Mykhailiuk\Documents\Tasks\WebApi\2015-Project-SDesk-master\SDesk\Model\bin\Debug\Epam.Sdesk.Model.pdb
+C:\Users\Oleksandr_Mykhailiuk\Documents\Tasks\WebApi\2015-Project-SDesk-master\SDesk\Model\bin\Debug\EntityFramework.dll
+C:\Users\Oleksandr_Mykhailiuk\Documents\Tasks\WebApi\2015-Project-SDesk-master\SDesk\Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Oleksandr_Mykhailiuk\Documents\Tasks\WebApi\2015-Project-SDesk-master\SDesk\Model\bin\Debug\log4net.dll
+C:\Users\Oleksandr_Mykhailiuk\Documents\Tasks\WebApi\2015-Project-SDesk-master\SDesk\Model\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Oleksandr_Mykhailiuk\Documents\Tasks\WebApi\2015-Project-SDesk-master\SDesk\Model\bin\Debug\RabbitMQ.Client.dll
+C:\Users\Oleksandr_Mykhailiuk\Documents\Tasks\WebApi\2015-Project-SDesk-master\SDesk\Model\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\Oleksandr_Mykhailiuk\Documents\Tasks\WebApi\2015-Project-SDesk-master\SDesk\Model\bin\Debug\System.Web.Http.dll
+C:\Users\Oleksandr_Mykhailiuk\Documents\Tasks\WebApi\2015-Project-SDesk-master\SDesk\Model\bin\Debug\System.Web.Http.WebHost.dll
+C:\Users\Oleksandr_Mykhailiuk\Documents\Tasks\WebApi\2015-Project-SDesk-master\SDesk\Model\bin\Debug\EntityFramework.xml
+C:\Users\Oleksandr_Mykhailiuk\Documents\Tasks\WebApi\2015-Project-SDesk-master\SDesk\Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Oleksandr_Mykhailiuk\Documents\Tasks\WebApi\2015-Project-SDesk-master\SDesk\Model\bin\Debug\log4net.xml
+C:\Users\Oleksandr_Mykhailiuk\Documents\Tasks\WebApi\2015-Project-SDesk-master\SDesk\Model\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Oleksandr_Mykhailiuk\Documents\Tasks\WebApi\2015-Project-SDesk-master\SDesk\Model\bin\Debug\RabbitMQ.Client.xml
+C:\Users\Oleksandr_Mykhailiuk\Documents\Tasks\WebApi\2015-Project-SDesk-master\SDesk\Model\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\Oleksandr_Mykhailiuk\Documents\Tasks\WebApi\2015-Project-SDesk-master\SDesk\Model\bin\Debug\System.Web.Http.xml
+C:\Users\Oleksandr_Mykhailiuk\Documents\Tasks\WebApi\2015-Project-SDesk-master\SDesk\Model\bin\Debug\System.Web.Http.WebHost.xml
+C:\Users\Oleksandr_Mykhailiuk\Documents\Tasks\WebApi\2015-Project-SDesk-master\SDesk\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+C:\Users\Oleksandr_Mykhailiuk\Documents\Tasks\WebApi\2015-Project-SDesk-master\SDesk\Model\obj\Debug\Epam.Sdesk.Model.dll
+C:\Users\Oleksandr_Mykhailiuk\Documents\Tasks\WebApi\2015-Project-SDesk-master\SDesk\Model\obj\Debug\Epam.Sdesk.Model.pdb
+C:\Users\Oleksandr_Mykhailiuk\Documents\Visual Studio 2015\Projects\SDesk\SDesk_WebApiTask\Model\bin\Debug\Epam.Sdesk.Model.dll.config
+C:\Users\Oleksandr_Mykhailiuk\Documents\Visual Studio 2015\Projects\SDesk\SDesk_WebApiTask\Model\bin\Debug\Epam.Sdesk.Model.dll
+C:\Users\Oleksandr_Mykhailiuk\Documents\Visual Studio 2015\Projects\SDesk\SDesk_WebApiTask\Model\bin\Debug\Epam.Sdesk.Model.pdb
+C:\Users\Oleksandr_Mykhailiuk\Documents\Visual Studio 2015\Projects\SDesk\SDesk_WebApiTask\Model\bin\Debug\EntityFramework.dll
+C:\Users\Oleksandr_Mykhailiuk\Documents\Visual Studio 2015\Projects\SDesk\SDesk_WebApiTask\Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Oleksandr_Mykhailiuk\Documents\Visual Studio 2015\Projects\SDesk\SDesk_WebApiTask\Model\bin\Debug\log4net.dll
+C:\Users\Oleksandr_Mykhailiuk\Documents\Visual Studio 2015\Projects\SDesk\SDesk_WebApiTask\Model\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Oleksandr_Mykhailiuk\Documents\Visual Studio 2015\Projects\SDesk\SDesk_WebApiTask\Model\bin\Debug\RabbitMQ.Client.dll
+C:\Users\Oleksandr_Mykhailiuk\Documents\Visual Studio 2015\Projects\SDesk\SDesk_WebApiTask\Model\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\Oleksandr_Mykhailiuk\Documents\Visual Studio 2015\Projects\SDesk\SDesk_WebApiTask\Model\bin\Debug\System.Web.Http.dll
+C:\Users\Oleksandr_Mykhailiuk\Documents\Visual Studio 2015\Projects\SDesk\SDesk_WebApiTask\Model\bin\Debug\System.Web.Http.WebHost.dll
+C:\Users\Oleksandr_Mykhailiuk\Documents\Visual Studio 2015\Projects\SDesk\SDesk_WebApiTask\Model\bin\Debug\EntityFramework.xml
+C:\Users\Oleksandr_Mykhailiuk\Documents\Visual Studio 2015\Projects\SDesk\SDesk_WebApiTask\Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Oleksandr_Mykhailiuk\Documents\Visual Studio 2015\Projects\SDesk\SDesk_WebApiTask\Model\bin\Debug\log4net.xml
+C:\Users\Oleksandr_Mykhailiuk\Documents\Visual Studio 2015\Projects\SDesk\SDesk_WebApiTask\Model\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Oleksandr_Mykhailiuk\Documents\Visual Studio 2015\Projects\SDesk\SDesk_WebApiTask\Model\bin\Debug\RabbitMQ.Client.xml
+C:\Users\Oleksandr_Mykhailiuk\Documents\Visual Studio 2015\Projects\SDesk\SDesk_WebApiTask\Model\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\Oleksandr_Mykhailiuk\Documents\Visual Studio 2015\Projects\SDesk\SDesk_WebApiTask\Model\bin\Debug\System.Web.Http.xml
+C:\Users\Oleksandr_Mykhailiuk\Documents\Visual Studio 2015\Projects\SDesk\SDesk_WebApiTask\Model\bin\Debug\System.Web.Http.WebHost.xml
+C:\Users\Oleksandr_Mykhailiuk\Documents\Visual Studio 2015\Projects\SDesk\SDesk_WebApiTask\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+C:\Users\Oleksandr_Mykhailiuk\Documents\Visual Studio 2015\Projects\SDesk\SDesk_WebApiTask\Model\obj\Debug\Epam.Sdesk.Model.dll
+C:\Users\Oleksandr_Mykhailiuk\Documents\Visual Studio 2015\Projects\SDesk\SDesk_WebApiTask\Model\obj\Debug\Epam.Sdesk.Model.pdb
