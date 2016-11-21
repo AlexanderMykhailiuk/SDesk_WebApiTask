@@ -1,33 +1,30 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using AutoMapper;
 using Epam.Sdesk.Model;
+using SDSK.API.Filters;
 using static SDSK.API.DBEmulator.EmulatorOfEmailDb;
 
 namespace SDSK.API.Controllers
 {
+    [NoExistExceptionFilter]
     public class MailsController : ApiController
     {
         public HttpResponseMessage GetAllMails()
         {
-            var response = Request.CreateResponse<IEnumerable<Mail>>(HttpStatusCode.OK, Mails);
-
+            var response = Request.CreateResponse<IEnumerable<Mail>>(HttpStatusCode.OK, FindAllMails());
+            
             return response;
         }
 
         public HttpResponseMessage GetMail(int id)
         {
-            Mail gettingMail = Mails.FirstOrDefault(m => m.Id == id);
+            Mail gettingMail = FindMail(id);
 
-            HttpResponseMessage response;
-
-            if (gettingMail !=null) response = Request.CreateResponse(HttpStatusCode.OK, gettingMail);
-            else response = new HttpResponseMessage(HttpStatusCode.NotFound);
-
+            HttpResponseMessage response = Request.CreateResponse(HttpStatusCode.OK, gettingMail);
+            
             return response;
         }
 
@@ -36,9 +33,7 @@ namespace SDSK.API.Controllers
         {
             if(ModelState.IsValid) //<- needing add attributes for mail in class definition
             {
-
-                newMail.Id = Mails.Count() + 1;
-                Mails.Add(newMail);
+                CreateMail(newMail);
 
                 return  new HttpResponseMessage(HttpStatusCode.Created);
             }
@@ -51,15 +46,13 @@ namespace SDSK.API.Controllers
         {
             if(ModelState.IsValid)
             {
-                Mail oldMail = Mails.FirstOrDefault(m => m.Id == id);
-
-                if (oldMail == null) return  new HttpResponseMessage(HttpStatusCode.NotFound);
-
+                Mail oldMail = FindMail(id);
+                
                 var mapper = new MapperConfiguration( cfg => cfg.CreateMap<Mail,Mail>() ).CreateMapper(); // I prefer to use automapper to update fields of mail
                 mapper.Map(updatedMail, oldMail);
                 oldMail.Id = id;
 
-                return  new HttpResponseMessage(HttpStatusCode.NoContent);
+                return new HttpResponseMessage(HttpStatusCode.NoContent);
             }
 
             return new HttpResponseMessage(HttpStatusCode.BadRequest);
@@ -67,18 +60,9 @@ namespace SDSK.API.Controllers
 
         public HttpResponseMessage DeleteMail(int id)
         {
-            Mail deletingMail = Mails.FirstOrDefault(m => m.Id == id);
-
-            HttpStatusCode status;
-
-            if (deletingMail != null)
-            {
-                Mails.Remove(deletingMail);
-                status = HttpStatusCode.NoContent;
-            }
-            else status = HttpStatusCode.NotFound;
-
-            return  new HttpResponseMessage(status);
+            RemoveMail(id);
+            
+            return  new HttpResponseMessage(HttpStatusCode.NoContent);
         }
     }
 }

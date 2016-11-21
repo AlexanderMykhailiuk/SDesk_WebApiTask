@@ -90,8 +90,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\AttachmentsController.cs" />
     <Compile Include="Controllers\MailsController.cs" />
     <Compile Include="DBEmulator\EmulatorOfEmailDb.cs" />
+    <Compile Include="DBEmulator\Exceptions\NoExistItemException.cs" />
+    <Compile Include="Filters\NoExistExceptionFilter.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
