@@ -10,6 +10,7 @@ namespace SDSK.API.DBEmulator
         private static List<Mail> _mails;
         private static List<Attachement> _attachements;
         private static List<Status> _statuses;
+        private static List<JiraItem> _jiraItems; 
         
         static EmulatorOfEmailDb()
         {
@@ -31,6 +32,14 @@ namespace SDSK.API.DBEmulator
             {
                 new Status() { Id = 1, Name = "Sent"},
                 new Status() { Id = 2, Name = "Not sent"}
+            };
+
+            _jiraItems = new List<JiraItem>()
+            {
+                new JiraItem() { JiraItemId = 1, JiraNumber = 1 },
+                new JiraItem() { JiraItemId = 2, JiraNumber = 1 },
+                new JiraItem() { JiraItemId = 3, JiraNumber = 1 },
+                new JiraItem() { JiraItemId = 4, JiraNumber = 1 },
             };
         }
 
@@ -108,6 +117,19 @@ namespace SDSK.API.DBEmulator
             Attachement attachment = FindAttachmentToMail(mailId, attachmentId); // <- throw appropriate exception
 
             _attachements.Remove(attachment);
+        }
+
+        #endregion
+
+        #region JiraItemsMethods
+
+        internal static JiraItem FindJiraItem(int jiraItemId)
+        {
+            JiraItem searchingJiraItem = _jiraItems.FirstOrDefault(j => j.JiraItemId == jiraItemId);
+
+            if (searchingJiraItem == null) throw new NoExistItemException("JiraItem", jiraItemId);
+
+            return searchingJiraItem;
         }
 
         #endregion

@@ -42,3 +42,25 @@ C:\Users\Oleksandr_Mykhailiuk\Documents\Visual Studio 2015\Projects\SDesk\SDesk_
 C:\Users\Oleksandr_Mykhailiuk\Documents\Visual Studio 2015\Projects\SDesk\SDesk_WebApiTask\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
 C:\Users\Oleksandr_Mykhailiuk\Documents\Visual Studio 2015\Projects\SDesk\SDesk_WebApiTask\Model\obj\Debug\Epam.Sdesk.Model.dll
 C:\Users\Oleksandr_Mykhailiuk\Documents\Visual Studio 2015\Projects\SDesk\SDesk_WebApiTask\Model\obj\Debug\Epam.Sdesk.Model.pdb
+C:\Users\sasha\Desktop\lab_tasks\WebApi\SDesk_WebApiTask\Model\bin\Debug\Epam.Sdesk.Model.dll.config
+C:\Users\sasha\Desktop\lab_tasks\WebApi\SDesk_WebApiTask\Model\bin\Debug\Epam.Sdesk.Model.dll
+C:\Users\sasha\Desktop\lab_tasks\WebApi\SDesk_WebApiTask\Model\bin\Debug\Epam.Sdesk.Model.pdb
+C:\Users\sasha\Desktop\lab_tasks\WebApi\SDesk_WebApiTask\Model\bin\Debug\EntityFramework.dll
+C:\Users\sasha\Desktop\lab_tasks\WebApi\SDesk_WebApiTask\Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\sasha\Desktop\lab_tasks\WebApi\SDesk_WebApiTask\Model\bin\Debug\log4net.dll
+C:\Users\sasha\Desktop\lab_tasks\WebApi\SDesk_WebApiTask\Model\bin\Debug\Newtonsoft.Json.dll
+C:\Users\sasha\Desktop\lab_tasks\WebApi\SDesk_WebApiTask\Model\bin\Debug\RabbitMQ.Client.dll
+C:\Users\sasha\Desktop\lab_tasks\WebApi\SDesk_WebApiTask\Model\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\sasha\Desktop\lab_tasks\WebApi\SDesk_WebApiTask\Model\bin\Debug\System.Web.Http.dll
+C:\Users\sasha\Desktop\lab_tasks\WebApi\SDesk_WebApiTask\Model\bin\Debug\System.Web.Http.WebHost.dll
+C:\Users\sasha\Desktop\lab_tasks\WebApi\SDesk_WebApiTask\Model\bin\Debug\EntityFramework.xml
+C:\Users\sasha\Desktop\lab_tasks\WebApi\SDesk_WebApiTask\Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\sasha\Desktop\lab_tasks\WebApi\SDesk_WebApiTask\Model\bin\Debug\log4net.xml
+C:\Users\sasha\Desktop\lab_tasks\WebApi\SDesk_WebApiTask\Model\bin\Debug\Newtonsoft.Json.xml
+C:\Users\sasha\Desktop\lab_tasks\WebApi\SDesk_WebApiTask\Model\bin\Debug\RabbitMQ.Client.xml
+C:\Users\sasha\Desktop\lab_tasks\WebApi\SDesk_WebApiTask\Model\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\sasha\Desktop\lab_tasks\WebApi\SDesk_WebApiTask\Model\bin\Debug\System.Web.Http.xml
+C:\Users\sasha\Desktop\lab_tasks\WebApi\SDesk_WebApiTask\Model\bin\Debug\System.Web.Http.WebHost.xml
+C:\Users\sasha\Desktop\lab_tasks\WebApi\SDesk_WebApiTask\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+C:\Users\sasha\Desktop\lab_tasks\WebApi\SDesk_WebApiTask\Model\obj\Debug\Epam.Sdesk.Model.dll
+C:\Users\sasha\Desktop\lab_tasks\WebApi\SDesk_WebApiTask\Model\obj\Debug\Epam.Sdesk.Model.pdb
