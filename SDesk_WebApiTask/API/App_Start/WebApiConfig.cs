@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web.Http;
+﻿using System.Web.Http;
+using SDSK.API.Constraints;
 
 namespace SDSK.API
 {
@@ -12,13 +10,21 @@ namespace SDSK.API
             // Web API configuration and services
 
             // Web API routes
-            
+
             config.MapHttpAttributeRoutes();
+
+            config.Routes.MapHttpRoute(
+                name: "JiraTestConstraintApi",
+                routeTemplate: "api/jiraitems/{id}",
+                defaults: new { controller = "jiraitems", id = RouteParameter.Optional },
+                constraints: new { id = new JiraIdConstraint(3)}
+            ); // <- create this map only for testing JiraIdConstarint
 
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
                 routeTemplate: "api/{controller}/{id}",
-                defaults: new { id = RouteParameter.Optional }
+                defaults: new { id = RouteParameter.Optional },
+                constraints: new { controller = "mails" }
             );
         }
     }

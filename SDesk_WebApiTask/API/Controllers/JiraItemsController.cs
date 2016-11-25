@@ -1,7 +1,9 @@
 ﻿using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using System.Web.Routing;
 using Epam.Sdesk.Model;
+using SDSK.API.Attributes;
 using SDSK.API.Filters;
 using static SDSK.API.DBEmulator.EmulatorOfEmailDb;
 
@@ -17,6 +19,12 @@ namespace SDSK.API.Controllers
             HttpResponseMessage response = Request.CreateResponse(HttpStatusCode.OK, gettingJiraItem);
 
             return response;
+        }
+
+        [JiraItemRoute("api/Jira-{id}",3)] // <- I pass max id to check of working 
+        public HttpResponseMessage GetJiraItemCheckAttributeRoute(int id)
+        {
+            return GetJiraItem(id);
         }
     }
 }

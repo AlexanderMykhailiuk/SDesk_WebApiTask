@@ -90,6 +90,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Attributes\JiraItemRouteAttribute.cs" />
+    <Compile Include="Constraints\JiraIdConstraint.cs" />
     <Compile Include="Controllers\AttachmentsController.cs" />
     <Compile Include="Controllers\JiraItemsController.cs" />
     <Compile Include="Controllers\MailsController.cs" />

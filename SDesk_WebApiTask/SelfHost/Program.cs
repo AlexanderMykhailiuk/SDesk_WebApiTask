@@ -8,20 +8,13 @@ namespace SelfHost
     {
         static void Main(string[] args)
         {
-            var config = new HttpSelfHostConfiguration("http://localhost:8080");
+            var config = new HttpSelfHostConfiguration("http://localhost:9000");
             
             WebApiConfig.Register(config);
             
             using (HttpSelfHostServer server = new HttpSelfHostServer(config))
             {
-                try
-                {
-                    server.OpenAsync().Wait();
-                }
-                catch (Exception exception)
-                {
-                    Console.WriteLine(exception);
-                }
+                server.OpenAsync().Wait();
                 Console.WriteLine("Press Enter to quit.");
                 Console.ReadLine();
             }
