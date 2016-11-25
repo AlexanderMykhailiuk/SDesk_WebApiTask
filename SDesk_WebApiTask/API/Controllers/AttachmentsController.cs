@@ -15,7 +15,7 @@ namespace SDSK.API.Controllers
     [RoutePrefix("api/mails/{id:int}/attachments/{attId:int?}")]
     public class AttachmentsController : ApiController
     {
-        [Route("")]
+        [Route("", Order = 1)]
         public HttpResponseMessage GetAllAttachmentsToMail(int id)
         {
             var searchingAttachments = FindAllAttachmentsToMail(id);
@@ -27,7 +27,7 @@ namespace SDSK.API.Controllers
             return response;
         }
 
-        [Route("")]
+        [Route("", Order = 1)]
         public HttpResponseMessage GetAttachmentToMail(int id, int attId)
         {
             Attachement gettingAttachement = FindAttachmentToMail(id, attId);
@@ -37,7 +37,7 @@ namespace SDSK.API.Controllers
             return response;
         }
 
-        [Route("")] // using '?' is default way to path parametrs to action, so I don't add here modifications
+        [Route("", Order = 1)] // using '?' is default way to path parametrs to action, so I don't add here modifications
         public HttpResponseMessage GetAllAttachmentsToMail(int id, string extention, string status = null)
         {
             var searchingAttachments = FindAllAttachmentsByExtensionAndByStatusToMail(id, extention, status);
@@ -49,7 +49,7 @@ namespace SDSK.API.Controllers
             return response;
         }
 
-        [Route("")]
+        [Route("", Order = 1)]
         [HttpPost]
         public HttpResponseMessage AddAttachment(int id, Attachement attachement)
         {
@@ -63,7 +63,7 @@ namespace SDSK.API.Controllers
             return new HttpResponseMessage(HttpStatusCode.BadRequest);
         }
 
-        [Route("")]
+        [Route("", Order = 1)]
         [HttpPut]
         public HttpResponseMessage UpdateAttachment(int id, int attid, Attachement updatedAttachement)
         {
@@ -81,7 +81,7 @@ namespace SDSK.API.Controllers
             return new HttpResponseMessage(HttpStatusCode.BadRequest);
         }
 
-        [Route("")]
+        [Route("", Order = 1)]
         public HttpResponseMessage DeleteAttachment(int id, int attid)
         {
             RemoveAttachment(id, attid);

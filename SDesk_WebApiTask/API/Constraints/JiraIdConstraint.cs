@@ -1,8 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
+using System.Net;
 using System.Net.Http;
-using System.Web;
+using System.Web.Http;
 using System.Web.Http.Routing;
 
 namespace SDSK.API.Constraints
@@ -28,7 +27,7 @@ namespace SDSK.API.Constraints
                 if (int.TryParse(value.ToString(), out id) && id > 0 && id <= _maxId) return true;
             }
 
-            return false;
+            throw new HttpResponseException(HttpStatusCode.BadRequest);
         }
     }
 }

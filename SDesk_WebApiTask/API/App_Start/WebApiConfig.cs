@@ -1,4 +1,5 @@
 ﻿using System.Web.Http;
+using System.Web.Http.Routing;
 using SDSK.API.Constraints;
 
 namespace SDSK.API
@@ -9,9 +10,12 @@ namespace SDSK.API
         {
             // Web API configuration and services
 
-            // Web API routes
+            // register route constraint
+            var constraintResolver = new DefaultInlineConstraintResolver();
+            constraintResolver.ConstraintMap.Add("jiraid", typeof(JiraIdConstraint));
 
-            config.MapHttpAttributeRoutes();
+            // Web API routes
+            config.MapHttpAttributeRoutes(constraintResolver);
 
             config.Routes.MapHttpRoute(
                 name: "JiraTestConstraintApi",
@@ -26,6 +30,8 @@ namespace SDSK.API
                 defaults: new { id = RouteParameter.Optional },
                 constraints: new { controller = "mails" }
             );
+
+
         }
     }
 }

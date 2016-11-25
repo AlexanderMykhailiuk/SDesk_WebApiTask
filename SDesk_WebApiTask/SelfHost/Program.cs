@@ -15,7 +15,7 @@ namespace SelfHost
             using (HttpSelfHostServer server = new HttpSelfHostServer(config))
             {
                 server.OpenAsync().Wait();
-                Console.WriteLine("Press Enter to quit.");
+                Console.WriteLine("Local host is runnig.\nPress Enter to stop it and quit.");
                 Console.ReadLine();
             }
         }
