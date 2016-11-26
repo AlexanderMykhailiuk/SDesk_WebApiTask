@@ -64,3 +64,8 @@ C:\Users\sasha\Desktop\lab_tasks\WebApi\SDesk_WebApiTask\API\obj\Debug\API.dll
 C:\Users\sasha\Desktop\lab_tasks\WebApi\SDesk_WebApiTask\API\obj\Debug\API.pdb
 C:\Users\Oleksandr_Mykhailiuk\Documents\Visual Studio 2015\Projects\SDesk\SDesk_WebApiTask\API\bin\log4net.dll
 C:\Users\Oleksandr_Mykhailiuk\Documents\Visual Studio 2015\Projects\SDesk\SDesk_WebApiTask\API\bin\log4net.xml
+C:\Users\sasha\Desktop\lab_tasks\WebApi\SDesk_WebApiTask\API\bin\log4net.dll
+C:\Users\sasha\Desktop\lab_tasks\WebApi\SDesk_WebApiTask\API\bin\log4net.xml
+C:\Users\sasha\Desktop\lab_tasks\WebApi\SDesk_WebApiTask\API\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\sasha\Desktop\lab_tasks\WebApi\SDesk_WebApiTask\API\bin\Swashbuckle.Core.dll
+C:\Users\sasha\Desktop\lab_tasks\WebApi\SDesk_WebApiTask\API\bin\WebActivatorEx.dll

@@ -6,20 +6,24 @@ namespace SDSK.API.Attributes
 {
     public class ApiVersionRouteAttribute : RouteFactoryAttribute
     {
-        public ApiVersionRouteAttribute(string template, int requredVersion)
+        private readonly int _requredVersion;
+
+        private const int MinVersion = 1;
+
+        public ApiVersionRouteAttribute(string template, int requredVersion = 1)
             : base(template)
         {
             _requredVersion = requredVersion;
         }
-
-        private readonly int _requredVersion;
         
         public override IDictionary<string, object> Constraints
         {
             get
             {
                 var constraints = new HttpRouteValueDictionary();
-                constraints.Add("jiraid", new ApiVersionConstraint(_requredVersion));
+
+                constraints.Add("apiVersion", new ApiVersionConstraint(_requredVersion));
+                
                 return constraints;
             }
         }

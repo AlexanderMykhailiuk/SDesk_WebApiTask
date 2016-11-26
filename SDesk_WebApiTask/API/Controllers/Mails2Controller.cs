@@ -12,13 +12,12 @@ using static SDSK.API.DBEmulator.EmulatorOfEmailDb;
 
 namespace SDSK.API.Controllers
 {
-    
     [NoExistExceptionFilter]
     [RoutePrefix("api/mails")]
     public class Mails2Controller : ApiController
     {
         private const int RequiredVersion = 2;
-
+        
         #region MailsActions
         
         [ApiVersionRoute("", RequiredVersion)]
@@ -84,7 +83,7 @@ namespace SDSK.API.Controllers
         
         #region AttachmentsActions
 
-        [ApiVersionRoute("{id}/attachments", RequiredVersion)]
+        [ApiVersionRoute("{id:int}/attachments",2)]
         public HttpResponseMessage GetAllAttachmentsToMail(int id)
         {
             var searchingAttachments = FindAllAttachmentsToMail(id);
@@ -95,8 +94,8 @@ namespace SDSK.API.Controllers
 
             return response;
         }
-
-        [ApiVersionRoute("{id}/attachments/{attid}", RequiredVersion)]
+        
+        [ApiVersionRoute("{id:int}/attachments/{attid}", RequiredVersion)]
         public HttpResponseMessage GetAttachmentToMail(int id, int attId)
         {
             Attachement gettingAttachement = FindAttachmentToMail(id, attId);
@@ -106,7 +105,7 @@ namespace SDSK.API.Controllers
             return response;
         }
 
-        [ApiVersionRoute("{id}/attachments", RequiredVersion)]
+        [ApiVersionRoute("{id:int}/attachments", RequiredVersion)]
         public HttpResponseMessage GetAllAttachmentsToMail(int id, string extention, string status = null)
         {
             var searchingAttachments = FindAllAttachmentsByExtensionAndByStatusToMail(id, extention, status);
@@ -118,7 +117,7 @@ namespace SDSK.API.Controllers
             return response;
         }
 
-        [ApiVersionRoute("{id}/attachments", RequiredVersion)]
+        [ApiVersionRoute("{id:int}/attachments", RequiredVersion)]
         [HttpPost]
         public HttpResponseMessage AddAttachment(int id, Attachement attachement)
         {
@@ -132,7 +131,7 @@ namespace SDSK.API.Controllers
             return new HttpResponseMessage(HttpStatusCode.BadRequest);
         }
 
-        [ApiVersionRoute("{id}/attachments/{attid}", RequiredVersion)]
+        [ApiVersionRoute("{id:int}/attachments/{attid}", RequiredVersion)]
         [HttpPut]
         public HttpResponseMessage UpdateAttachment(int id, int attid, Attachement updatedAttachement)
         {
@@ -150,7 +149,7 @@ namespace SDSK.API.Controllers
             return new HttpResponseMessage(HttpStatusCode.BadRequest);
         }
 
-        [ApiVersionRoute("{id}/attachments/{attid}", RequiredVersion)]
+        [ApiVersionRoute("{id:int}/attachments/{attid}", RequiredVersion)]
         public HttpResponseMessage DeleteAttachment(int id, int attid)
         {
             RemoveAttachment(id, attid);

@@ -1,11 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using AutoMapper;
 using Epam.Sdesk.Model;
+using SDSK.API.Attributes;
 using SDSK.API.Filters;
 using  static SDSK.API.DBEmulator.EmulatorOfEmailDb;
 
@@ -15,7 +15,7 @@ namespace SDSK.API.Controllers
     [RoutePrefix("api/mails/{id:int}/attachments/{attId:int?}")]
     public class AttachmentsController : ApiController
     {
-        [Route("", Order = 1)]
+        [ApiVersionRoute("")] // "Web API (1.x-2.x) does not support multiple attribute routes with the same path on different controllers"
         public HttpResponseMessage GetAllAttachmentsToMail(int id)
         {
             var searchingAttachments = FindAllAttachmentsToMail(id);
@@ -26,8 +26,8 @@ namespace SDSK.API.Controllers
 
             return response;
         }
-
-        [Route("", Order = 1)]
+        
+        [Route("")]
         public HttpResponseMessage GetAttachmentToMail(int id, int attId)
         {
             Attachement gettingAttachement = FindAttachmentToMail(id, attId);
@@ -37,7 +37,7 @@ namespace SDSK.API.Controllers
             return response;
         }
 
-        [Route("", Order = 1)] // using '?' is default way to path parametrs to action, so I don't add here modifications
+        [Route("")] // using '?' is default way to path parametrs to action, so I don't add here modifications
         public HttpResponseMessage GetAllAttachmentsToMail(int id, string extention, string status = null)
         {
             var searchingAttachments = FindAllAttachmentsByExtensionAndByStatusToMail(id, extention, status);
@@ -49,7 +49,7 @@ namespace SDSK.API.Controllers
             return response;
         }
 
-        [Route("", Order = 1)]
+        [Route("")]
         [HttpPost]
         public HttpResponseMessage AddAttachment(int id, Attachement attachement)
         {
@@ -63,7 +63,7 @@ namespace SDSK.API.Controllers
             return new HttpResponseMessage(HttpStatusCode.BadRequest);
         }
 
-        [Route("", Order = 1)]
+        [Route("")]
         [HttpPut]
         public HttpResponseMessage UpdateAttachment(int id, int attid, Attachement updatedAttachement)
         {
@@ -81,7 +81,7 @@ namespace SDSK.API.Controllers
             return new HttpResponseMessage(HttpStatusCode.BadRequest);
         }
 
-        [Route("", Order = 1)]
+        [Route("")]
         public HttpResponseMessage DeleteAttachment(int id, int attid)
         {
             RemoveAttachment(id, attid);

@@ -66,3 +66,6 @@ C:\Users\Oleksandr_Mykhailiuk\Documents\Visual Studio 2015\Projects\SDesk\SDesk_
 C:\Users\Oleksandr_Mykhailiuk\Documents\Visual Studio 2015\Projects\SDesk\SDesk_WebApiTask\SelfHost\bin\Debug\AutoMapper.xml
 C:\Users\Oleksandr_Mykhailiuk\Documents\Visual Studio 2015\Projects\SDesk\SDesk_WebApiTask\SelfHost\bin\Debug\System.Web.Http.WebHost.xml
 C:\Users\Oleksandr_Mykhailiuk\Documents\Visual Studio 2015\Projects\SDesk\SDesk_WebApiTask\SelfHost\obj\Debug\SelfHost.csprojResolveAssemblyReference.cache
+C:\Users\sasha\Desktop\lab_tasks\WebApi\SDesk_WebApiTask\SelfHost\bin\Debug\log4net.dll
+C:\Users\sasha\Desktop\lab_tasks\WebApi\SDesk_WebApiTask\SelfHost\bin\Debug\log4net.xml
+C:\Users\sasha\Desktop\lab_tasks\WebApi\SDesk_WebApiTask\SelfHost\bin\Debug\Swashbuckle.Core.dll

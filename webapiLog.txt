@@ -1,0 +1,4 @@
+2016-11-26 03:53:31,910 [7] ERROR AppLogger - Manipulating with not existed item. Deteils: Not exist Mail with key 4
+2016-11-26 03:53:44,415 [6] ERROR AppLogger - Manipulating with not existed item. Deteils: Not exist Mail with key 5
+2016-11-26 03:53:59,845 [6] ERROR AppLogger - Manipulating with not existed item. Deteils: Not exist Attachment with key 4
+2016-11-26 03:55:06,129 [6] ERROR AppLogger - Manipulating with not existed item. Deteils: Not exist Mail with key 7
